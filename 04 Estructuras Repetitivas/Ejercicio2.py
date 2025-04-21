@@ -5,10 +5,7 @@ numero = int(input("Ingrese un numero entero: "))
 numero_abs = abs(numero)
 cantidad_digitos = 0
 
-while True:
+while numero_abs > 0:
     cantidad_digitos += 1
     numero_abs = numero_abs // 10
-    if numero_abs == 0:
-        break
-
 print(f"El numero tiene: {cantidad_digitos} digitos.")
